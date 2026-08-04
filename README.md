@@ -1,11 +1,36 @@
 # Course-Registration-System---Team-Watalii
 # Student Course Registration System
 
+A Software Engineering laboratory project demonstrating the development of a **Student Course Registration System** using the **Agile Kanban methodology**. The project focuses on collaborative software development, version control using GitHub, and project management using Trello.
+
+---
+
 ## Overview
+The Student Course Registration System enables students to:
 
-This project is a Software Engineering laboratory project that demonstrates the development of a Student Course Registration System using the Agile Kanban methodology.
+- Log in securely
+- View available courses
+- Register for courses
+- Drop registered courses
+- View their registered courses
 
-## Features
+The project follows Agile Kanban principles to encourage continuous task tracking, collaboration, and incremental development.
+
+---
+
+## 👥 Team Members
+
+| Member | Role |
+|--------|------|
+| **Tabitha Macharia** | Team Lead, Kanban Manager & Documentation Lead |
+| **Esther Kamau** | Business Analyst & QA Tester |
+| **Lorna Kyalo** | Database Designer |
+| **Ruth Ndua** | UI/UX Designer & Developer |
+| **Maxwell Chege** | Lead Developer |
+
+---
+
+## ✨Features
 
 - Student Login
 - View Available Courses
@@ -13,25 +38,155 @@ This project is a Software Engineering laboratory project that demonstrates the 
 - Drop Courses
 - View Registered Courses
 
-## Technologies
+---
 
-- HTML
-- CSS
+## 🛠️Technologies
+
+### Frontend
+- HTML5
+- CSS3
 - JavaScript
+
+### Backend
 - PHP
+
+### Database
 - MySQL
+
+### Collaboration & Project Management
 - Git & GitHub
+- Trello
 
-## Team Members
-
-- Student A – Kanban Manager
-- Student B – Business Analyst
-- Student C – Database Designer
-- Student D – UI/UX Designer
-- Student E – Lead Developer
-
-## Project Management
-
-Kanban board managed using Trello.
+---
 
 ## Repository Structure
+
+```
+Course-Registration-System---Team-Watalii/
+│
+├── backend/
+    ├──php/
+├── frontend/
+│   ├── css/
+│   ├── js/
+├── assets
+│   └── images/
+│
+├── database/
+│   ├── schema.sql
+│   └── sample_data.sql
+│
+├── docs/
+│   ├── Requirements Specification
+│   ├── ERD
+│   ├── Wireframes
+│   ├── Test Report
+│   └── Reflection Report
+│
+├── README.md
+└── .gitignore
+```
+
+---
+
+##Getting Started
+###Prerequisites
+Install the following software:
+
+- Git
+- XAMPP (Apache & MySQL)
+- Visual Studio Code (recommended)
+- A modern web browser (Chrome, Edge, Firefox)
+
+---
+
+### Installation
+bash
+git clone https://github.com/TabbyMacharia/Course-Registration-System---Team-Watalii.git
+
+cd Course-Registration-System---Team-Watalii
+
+
+Move the project folder into your XAMPP 'htdocs' directory if using PHP.
+
+Import the SQL database into phpMyAdmin.
+
+Start Apache and MySQL from the XAMPP Control Panel.
+
+---
+
+
+### Running the app
+1. Start Apache and MySQL in XAMPP.
+2. Open phpMyAdmin and import the database.
+3. Visit:
+
+```
+http://localhost/Course-Registration-System---Team-Watalii/
+```
+
+---
+
+## 🗄️ Database
+Link to ERD image + brief note (once Lorna delivers)
+**Status:** 🚧 In Progress
+
+
+## 🧪 Testing
+Link to test cases/bug report (once Essie delivers)
+**Status:** 🚧 In Progress
+
+## 📄 Documentation 
+```
+Links to be provided later
+```
+- Requirements Specification
+- Use Case Diagram
+- Database Design
+- UI Wireframes
+- Test Report
+- Final Report
+
+**Status:** 🚧 In Progress
+
+## 📌 Project Management
+
+Project management is conducted using **Trello** following the **Agile Kanban** methodology.
+
+The workflow consists of:
+
+```
+Backlog
+    ↓
+To Do
+    ↓
+In Progress
+    ↓
+Testing
+    ↓
+Done
+```
+
+---
+
+## 🌿 Git Workflow
+
+Each team member works on their own feature branch using the naming convention:
+
+name/role
+
+Examples:
+
+- `tabby/kanban_manager`
+- `essie/business_analyst`
+- `lorna/database_designer`
+- `ruth/uiux_designer`
+- `maxxie/lead_developer`
+
+Changes are submitted through Pull Requests before being merged into the `main` branch.
+
+---
+
+## 📜 License
+
+This project is developed for academic purposes as part of a Software Engineering laboratory assignment.
