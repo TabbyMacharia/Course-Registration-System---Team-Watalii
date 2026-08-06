@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registered Courses - Course Registration System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div>
+                <div class="brand">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <span>UniPortal</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="courses.html" class="nav-link"><i class="fa-solid fa-book-open"></i> Courses</a></li>
+                    <li><a href="#" class="nav-link"><i class="fa-solid fa-calendar-days"></i> Schedule</a></li>
+                    <li><a href="#" class="nav-link"><i class="fa-solid fa-user"></i> Profile</a></li>
+                </ul>
+            </div>
+            <a href="../../backend/api/logout.php" class="nav-link"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-header">
+                <div class="search-bar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="registered-search-input" placeholder="Search registered courses...">
+                </div>
+                <div class="user-profile">
+                    <div class="avatar" id="user-avatar">--</div>
+                    <span id="user-name-display">Loading...</span>
+                </div>
+            </header>
+
+            <div class="tab-bar">
+                <a href="courses.html" class="tab-link">Available Courses</a>
+                <a href="registered.html" class="tab-link active">Registered Courses (<span id="reg-badge">0</span>)</a>
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Code</th>
+                            <th>Course Name</th>
+                            <th>Credits</th>
+                            <th>Instructor</th>
+                            <th>Classroom</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="registered-table-body">
+                        <!-- Table rows populated dynamically by JS -->
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <!-- Drop Confirmation Modal -->
+    <div id="drop-modal" class="modal-overlay hidden">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3 style="color: var(--danger, #dc3545);"><i class="fa-solid fa-triangle-exclamation"></i> Confirm Drop Action</h3>
+            </div>
+            <p style="font-size: 14px; color: var(--text-muted, #666); margin: 15px 0;">
+                Are you sure you want to drop <strong id="drop-course-title" style="color: var(--text-primary, #111);"></strong>?
+            </p>
+            <div class="modal-footer" style="display: flex; justify-content: flex-end; gap: 10px;">
+                <button class="btn btn-outline" id="cancel-drop-btn">Cancel</button>
+                <button class="btn btn-danger" id="confirm-drop-btn">Yes, Drop Course</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/registered.js"></script>
+</body>
+</html>
