@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const formData = new FormData();
         formData.append('offering_id', offeringId);
 
-        fetch('../../backend/api/register_course.php', { method: 'POST', body: formData })
+        fetch('../../backend/api/register_courses.php', { method: 'POST', body: formData })
             .then(res => res.json())
             .then(data => {
                 alert(data.message);
