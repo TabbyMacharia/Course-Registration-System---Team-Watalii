@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Deliverables Visual Preview</title>
+    <style>
+        body {
+            background-color: #121214;
+            color: #00FF66;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .screen-container {
+            background-color: #000000;
+            border: 2px solid #333333;
+            border-radius: 8px;
+            padding: 24px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+        }
+
+        .screen-title {
+            color: #FFFFFF;
+            font-size: 18px;
+            margin-bottom: 16px;
+            font-family: sans-serif;
+            border-bottom: 1px solid #333333;
+            padding-bottom: 8px;
+        }
+
+        pre {
+            margin: 0;
+            font-size: 13px;
+            line-height: 1.2;
+            white-space: pre;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- SCREEN 1 -->
+    <div class="screen-container">
+        <div class="screen-title">Deliverable 1: Login Screen Wireframe</div>
+        <pre>
++-----------------------------------------------------------------------+
+|                                                                       |
+| (Centered Login Card)                                                 |
+| +-----------------------------------------------------------------+   |
+| |                    [ Logo / Placeholder ]                       |   |
+| |                        Student Portal                           |   |
+| |                    Sign in to your account                      |   |
+| |                                                                 |   |
+| |   +---------------------------------------------------------+   |   |
+| |   | Email / Student ID                                      |   |   |
+| |   | [ c026-01-0764/2024@dkut.ac.ke                        ] |   |   |
+| |   +---------------------------------------------------------+   |   |
+| |                                                                 |   |
+| |   +---------------------------------------------------------+   |   |
+| |   | Password                                                |   |   |
+| |   | [ ******************                                (o) ] |   |   |
+| |   +---------------------------------------------------------+   |   |
+| |                                                                 |   |
+| |   [ ] Remember me                         Forgot Password?      |   |
+| |                                                                 |   |
+| |   +---------------------------------------------------------+   |   |
+| |   |                    [ SIGN IN BUTTON ]                   |   |   |
+| |   +---------------------------------------------------------+   |   |
+| |                                                                 |   |
+| +-----------------------------------------------------------------+   |
+|                                                                       |
++-----------------------------------------------------------------------+
+        </pre>
+    </div>
+
+    <!-- SCREEN 2 -->
+    <div class="screen-container">
+        <div class="screen-title">Deliverable 2: Course Registration Screen Wireframe</div>
+        <pre>
++-----------------------------------------------------------------------+
+| [🎓] UniPortal       | [ 🔍 Search courses... ]       (RM) Ruth Ndua |
++-----------------------------------------------------------------------+
+| [Navigation] |                                                        |
+|              |  [ Available Courses (Active) ]  [ Registered (2) ]    |
+| > Courses    |  ====================================================  |
+|              |                                                        |
+| > Schedule   |  +-----------------------+  +-----------------------+  |
+|              |  | CCS101                |  | CCS445                |  |
+| > Profile    |  | Software Engineering  |  | Theory of Computing   |  |
+|              |  | Dr. Ruth Ndua         |  | Prof. Maxwell Chege   |  |
+| -------------|  |                       |  |                       |  |
+| > Logout     |  | [Details]  [Register] |  | [Details]  [Register] |  |
+|              |  +-----------------------+  +-----------------------+  |
++--------------+--------------------------------------------------------+
+
+      +----------------------------------------------------------+
+      | (Modal Overlay: Course Details)                      [X] |
+      +----------------------------------------------------------+
+      | Title: Theory of Computing                               |
+      | Code: CCS445                                             |
+      | Instructor: Prof. Maxwell Chege                          |
+      |                                                          |
+      | Description:                                             |
+      | Examines computational models, decidability, complexity  |
+      | theory, and automata theory.                             |
+      |                                                          |
+      |                                              [ CLOSE ]   |
+      +----------------------------------------------------------+
+        </pre>
+    </div>
+
+    <!-- SCREEN 3 -->
+    <div class="screen-container">
+        <div class="screen-title">Deliverable 3: Registered Courses Screen Wireframe</div>
+        <pre>
++-----------------------------------------------------------------------+
+| SYSTEM SITEMAP & STRUCTURE: REGISTERED COURSES PAGE                    |
++-----------------------------------------------------------------------+
+|                                                                       |
+|  [ TOP NAVIGATION BAR ]                                               |
+|  ├── System Brand: [🎓] UniPortal                                     |
+|  ├── Search Control: [ 🔍 Search registered courses... ]              |
+|  └── User Profile: (RM) Ruth Ndua                                     |
+|                                                                       |
+|  [ LEFT SIDEBAR NAV ]           [ MAIN CONTENT VIEW ]                 |
+|  ├── Available Courses          ├── Tab Bar: [Available] | [Registered] |
+|  ├── Registered Courses (Active)└── Data Table Container              |
+|  ├── Profile Schedule              ├── Columns: [CODE|TITLE|INSTRUCTOR|ACTION]
+|  └── System Logout                 ├── Row 1: CCS101 | Software Eng. | [DROP]
+|                                    └── Row 2: CCS445 | Theory of Comp| [DROP]
+|                                                                       |
++-----------------------------------------------------------------------+
+
+      +----------------------------------------------------------+
+      | (Modal Overlay: Confirm Drop Action)                     |
+      +----------------------------------------------------------+
+      | ⚠️ Confirm Drop                                           |
+      |                                                          |
+      | Are you sure you want to drop:                           |
+      | CCS445: Theory of Computing?                             |
+      |                                                          |
+      |                        [ CANCEL ]   [ YES, DROP ]        |
+      +----------------------------------------------------------+
+        </pre>
+    </div>
+
+</body>
+</html>

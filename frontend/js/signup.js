@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const loginForm = document.getElementById('login-form');
+    const signupForm = document.getElementById('signup-form');
     const passwordInput = document.getElementById('password');
     const togglePasswordBtn = document.getElementById('toggle-password');
 
@@ -14,28 +14,26 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Handle Form Submission
-    if (loginForm) {
-        loginForm.addEventListener('submit', (e) => {
+    if (signupForm) {
+        signupForm.addEventListener('submit', (e) => {
             e.preventDefault();
 
-            const formData = new FormData(loginForm);
+            const formData = new FormData(signupForm);
 
-            fetch('../../backend/api/login_action.php', {
+            fetch('../../backend/api/signup_action.php', {
                 method: 'POST',
                 body: formData
             })
             .then(res => res.json())
             .then(data => {
+                alert(data.message);
                 if (data.success) {
-                    // Redirect to role-specific target page sent by PHP
-                    window.location.href = data.redirect || 'courses.html';
-                } else {
-                    alert('Login Failed: ' + (data.message || 'Invalid credentials.'));
+                    window.location.href = 'login.html';
                 }
             })
             .catch(err => {
-                console.error('Login error:', err);
-                alert('An error occurred during login. Please check server logs.');
+                console.error('Signup error:', err);
+                alert('An error occurred during account creation. Please try again.');
             });
         });
     }
