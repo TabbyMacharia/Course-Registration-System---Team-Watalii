@@ -65,16 +65,34 @@ The project follows Agile Kanban principles to encourage continuous task trackin
 Course-Registration-System---Team-Watalii/
 │
 ├── backend/
-    ├──php/
+│   ├── config/
+│   │   └── db.php                  # Database connection settings
+│   └── api/
+│       ├── login_action.php        # Handles user login and session routing
+│       ├── signup_action.php       # Handles student/lecturer registration
+│       ├── get_courses.php         # Fetches available courses catalog
+│       ├── register_course.php     # Handles student course enrollment
+│       ├── add_course_offering.php # Handles lecturer course publishing
+│       └── logout.php              # Destroys active user sessions
+│
 ├── frontend/
 │   ├── css/
-│   ├── js/
-├── assets
-│   └── images/
+│   │   └── styles.css              # Main design system styles
+│   ├── html/
+│   │   ├── login.html              # Login page
+│   │   ├── signup.html             # Role-based account sign-up page
+│   │   ├── courses.html            # Student available courses catalog
+│   │   ├── registered.html         # Student enrolled courses view
+│   │   └── lecturer.html           # Lecturer course management dashboard
+│   └── js/
+│       ├── login.js                # Frontend authentication logic
+│       ├── signup.js               # Registration form handler
+│       ├── courses.js              # Student course listing & registration script
+│       ├── registered.js           # Student registered courses script
+│       └── lecturer.js             # Lecturer course publishing logic
 │
 ├── database/
-│   ├── schema.sql
-│   └── sample_data.sql
+│   ├── schema.sql                  # Database table schema
 │
 ├── docs/
 │   ├── Requirements Specification
