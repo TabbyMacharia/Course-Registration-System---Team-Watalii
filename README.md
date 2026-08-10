@@ -141,32 +141,17 @@ Start Apache and MySQL from the XAMPP Control Panel.
 3. Visit:
 
 ```
-http://localhost/Course-Registration-System---Team-Watalii/
+http://localhost:8000/frontend/html/login.html
 ```
 
 ---
 
-## 🗄️ Database
-Link to ERD image + brief note (once Lorna delivers)
-**Status:** 🚧 In Progress
-
-
-## 🧪 Testing
-Link to test cases/bug report (once Essie delivers)
-**Status:** 🚧 In Progress
-
 ## 📄 Documentation 
-```
-Links to be provided later
-```
 - Requirements Specification
 - Use Case Diagram
 - Database Design
 - UI Wireframes
 - Test Report
-- Final Report
-
-**Status:** 🚧 In Progress
 
 ## 📌 Project Management
 
