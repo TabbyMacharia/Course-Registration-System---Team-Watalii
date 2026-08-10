@@ -108,8 +108,8 @@ Course-Registration-System---Team-Watalii/
 
 ---
 
-##Getting Started
-###Prerequisites
+## Getting Started
+### Prerequisites
 Install the following software:
 
 - Git
