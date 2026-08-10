@@ -95,7 +95,8 @@ Course-Registration-System---Team-Watalii/
 │   ├── schema.sql                  # Database table schema
 │
 ├── docs/
-│   ├── Requirements Specification
+│   ├── Requirements Specification.pdf
+│   ├── UseCase Diagram.pdf
 │   ├── ERD
 │   ├── Wireframes
 │   ├── Test Report
